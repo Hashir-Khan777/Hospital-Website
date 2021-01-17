@@ -1,0 +1,82 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #efefef;
+  color: #555;
+  padding: 10px 100px;
+  z-index: 999;
+  border-bottom: 1px solid #555;
+}
+
+.appointment_links {
+  color: #555;
+}
+
+.upper_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.appointment_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emmergency_number {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appointment_items {
+  margin: 0 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.emmergency_number {
+  align-items: center;
+}
+
+.emmergency_number > i {
+  font-size: 12px !important;
+}
+
+.emmergency_number > p {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.logo_nav_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav_list_item {
+  font-size: 12px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav_links {
+  color: #555;
+}
+
+.nav_links:hover,
+.appointment_links:hover,
+.nav_list_item:hover {
+  color: #58a8ff;
+}
+
+.active {
+  color: #58a8ff;
+}

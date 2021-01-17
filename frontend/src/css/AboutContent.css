@@ -1,0 +1,97 @@
+.about_content {
+  position: absolute;
+  top: 430px;
+}
+
+.facilities_content {
+  margin-top: 20px;
+}
+
+.facilities_content > h1 {
+  margin-bottom: 10px;
+}
+
+.about_our_hospital {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 15px;
+  color: #323232;
+}
+
+.about_image_section figure {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+.about_image_section figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_content_section {
+  width: 50%;
+  text-align: justify;
+}
+
+.headiing_tag_line {
+  margin-bottom: 15px;
+}
+
+.check_services {
+  position: relative;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer !important;
+  background: none;
+  border: none;
+  background-color: #45aaff;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.newspaper_icon {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 20px;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #0079de !important;
+}
+
+.giude {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #45aaff;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.more_guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #304770;
+  font-size: 11px;
+  padding: 3px 5px;
+  margin-top: 10px;
+  /* display: none; */
+  color: #efefef;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image_content:hover .more_guide {
+  display: block;
+}

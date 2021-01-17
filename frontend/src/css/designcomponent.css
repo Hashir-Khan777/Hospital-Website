@@ -1,0 +1,47 @@
+.design_component {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  color: #efefef;
+  font-size: 11px;
+  transition: all 0.5s linear;
+}
+
+.skew_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 230px;
+  height: 200px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.skew_one,
+.skew_three {
+  transform: skewY(-10deg);
+  background-color: #007cba;
+}
+
+.skew_two,
+.skew_four {
+  transform: skewY(10deg);
+  background-color: #006ba1;
+}
+
+.more {
+  background-color: #304770;
+  padding: 3px 5px;
+  margin-top: 10px;
+  display: none;
+  color: #efefef;
+  transition: all 0.3s ease;
+}
+
+.skew_box:hover > .more {
+  display: block;
+}

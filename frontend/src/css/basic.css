@@ -1,0 +1,18 @@
+@font-face {
+  font-family: MerriWeather;
+  src: url(./font/MerriweatherSans-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MerriWeather;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #efefef;
+}
