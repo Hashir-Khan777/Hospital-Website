@@ -1,0 +1,46 @@
+.dentists_content {
+  position: relative;
+  height: 200vh;
+}
+
+.dentists_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dentists_content {
+  top: 30vh;
+}
+
+.dentist_item {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid #58a8ff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.doctor_details {
+  margin: 20px 0;
+}
+
+.doctor_details h1 {
+  margin: 15px 0;
+}
+
+.doctor_details p {
+  margin: 0 0 25px 0;
+}
+
+.dental_links {
+  position: relative;
+  color: #fff;
+  background-color: #58a8ff;
+  border-radius: 4px;
+  padding: 10px 20px;
+}

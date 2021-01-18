@@ -63,7 +63,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="quick_links_item">
-              <Link to="/" className="quick_access_links">
+              <Link to="/dentist" className="quick_access_links">
                 dentists
               </Link>
             </li>

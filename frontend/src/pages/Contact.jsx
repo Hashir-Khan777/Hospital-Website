@@ -46,8 +46,21 @@ const Contact = () => {
             </table>
           </fieldset>
         </form>
+        <p>--OR--</p>
         <div className="whatsapp_mesanger">
-          <p>--OR--</p>
+          <a
+            href="https://web.whatsapp.com/send?phone=923002278864"
+            target="_whatsapp"
+          >
+            <figure>
+              <img src="/images/whatsapp.png" width="90px" alt="" />
+            </figure>
+          </a>
+          <a href="https://m.me/ZiaDentalCare" target="_messenger">
+            <figure>
+              <img src="/images/messenger.png" width="80px" alt="" />
+            </figure>
+          </a>
         </div>
       </div>
       <Footer />

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
+import Dentist from "../pages/Dentist";
 import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
 import Privacy from "../pages/Privacy";
@@ -14,6 +15,7 @@ const Approuter = () => {
       <Route exact={true} path="/landingpage" component={LandingPage} />
       <Route exact={true} path="/privacypolicy" component={Privacy} />
       <Route exact={true} path="/contact" component={Contact} />
+      <Route exact={true} path="/dentist" component={Dentist} />
     </Router>
   );
 };
