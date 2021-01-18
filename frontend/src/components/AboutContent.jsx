@@ -13,12 +13,12 @@ const AboutContent = () => {
           </div>
           <div className="about_our_hospital_section">
             <p>
-              Personalized patient care is what sets Medicus Medical Center
-              apart. When you visit one of our four San Francisco campus
-              locations you can expect to receive world class care. Expert
-              physician specialists and caring clinical staff provide you with
-              an exceptional health care experience. Personalized patient care
-              is what sets Medicus Medical Center apart.
+              Zia Dental Care, also known as the best dental clinic in Karachi
+              where team of dentists aids in providing oral health services in
+              affordable prices, who specializes in dentistry, the analysis,
+              prevention, handling of infection, diseases of the teeth, and
+              diseases of the soft tissues of the mouth. Our dentists always
+              concerned with the improvement of oral health services.
             </p>
           </div>
 

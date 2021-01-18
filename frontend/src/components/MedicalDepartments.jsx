@@ -6,7 +6,7 @@ const MedicalDepartments = () => {
   return (
     <div className="medical_departments">
       <div className="meical_heading_tagline">
-        <h1>MEDICAL DEPARTMENTS</h1>
+        <h1>OUR DOCTORS</h1>
         <p>The Backbone of our Clinic</p>
       </div>
 
@@ -16,13 +16,13 @@ const MedicalDepartments = () => {
             <div className="medical_card_image">
               <Link to="/">
                 <figure>
-                  <img src="/images/nurse.jpg" alt="" />
+                  <img src="/images/aimenzia.jpg" alt="" />
                 </figure>
               </Link>
             </div>
             <div className="medical_image_content">
-              <h3>SURGERY</h3>
-              <p>Dr. Avis Stankovic</p>
+              <h3>COSMETIC DENTIST</h3>
+              <p>Dr. Aimen Zia</p>
             </div>
             <div className="more_about_departments">
               <Link className="see_more_link" to="/">
@@ -35,13 +35,13 @@ const MedicalDepartments = () => {
             <div className="medical_card_image">
               <Link to="/">
                 <figure>
-                  <img src="/images/nurse.jpg" alt="" />
+                  <img src="/images/zaid.jpg" alt="" />
                 </figure>
               </Link>
             </div>
             <div className="medical_image_content">
-              <h3>MICROBIOLOGY</h3>
-              <p>Dr. John Manios</p>
+              <h3>MAXILLOFACIAL SURGEON</h3>
+              <p>Dr. Zaid Iqbal</p>
             </div>
             <div className="more_about_departments">
               <Link className="see_more_link" to="/">
@@ -54,13 +54,13 @@ const MedicalDepartments = () => {
             <div className="medical_card_image">
               <Link to="/">
                 <figure>
-                  <img src="/images/nurse.jpg" alt="" />
+                  <img src="/images/farhan.jpg" alt="" />
                 </figure>
               </Link>
             </div>
             <div className="medical_image_content">
-              <h3>PATHOLOGY</h3>
-              <p>Dr. Marie Curie</p>
+              <h3>ORTHODONTIST</h3>
+              <p>Dr. Farhan Farooq</p>
             </div>
             <div className="more_about_departments">
               <Link className="see_more_link" to="/">
@@ -71,21 +71,25 @@ const MedicalDepartments = () => {
         </div>
 
         <div className="modern_equipments">
-          <h1>MODERN EQUIPMENT</h1>
+          <h1>ABOUT OUR DOCTORS</h1>
           <p>
-            Personalized patient care is what sets Medicus Medical Center apart.
-            When you visit one of our four San Francisco campus locations you
-            can expect to receive world class care. Expert physician specialists
-            and caring clinical staff provide you with an exceptional patient
-            care is what sets Medicus Medical Center apart health care
-            experience.
+            Dr. Aimen Zia and her team of Dental Professionals include all
+            experienced and dedicated dentists that work together to serve our
+            patients with a friendly and family-like atmosphere. We work and
+            support each other to provide you Best Dental Treatment in Karachi
+            with a soothing comfortable environment. Our clinic is situated in
+            the vicinity of the Bath island near 3-Talwar Clifton, Karachi. Zia
+            Dental Care believes to provide their patients with an affordable
+            and promising treatment to satisfy them with their expectations.
+            Your beautiful smile is our first priority. Every person has
+            different expectations and our job is to meet their expectations.
           </p>
 
           <button className="departments_button">
             <div className="department_icon">
               <i class="fas fa-download download_icon"></i>
             </div>
-              CHECKOUT ALLDEPARTMENTS
+            CHECKOUT ALL DOCTORS
           </button>
         </div>
       </div>

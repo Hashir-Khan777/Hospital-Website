@@ -14,7 +14,7 @@ const DesignComponent = () => {
           </div>
 
           <div className="design_details">
-            <h3>DEPARTMENTS</h3>
+            <h3>DOCTORS</h3>
             <p>The Backbone of our Clinic</p>
           </div>
         </div>
@@ -48,8 +48,8 @@ const DesignComponent = () => {
           </div>
 
           <div className="design_details">
-            <h3>FIND A DOCTOR</h3>
-            <p>All our staff by department</p>
+            <h3>CONTACT</h3>
+            <p>All our staff IS AVAILABLE FOR YOU</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const DesignComponent = () => {
           </div>
 
           <div className="design_details">
-            <h3>MEDICAL SERVICES</h3>
+            <h3>REQUEST AN APPOINTMENT</h3>
             <p>Call us or fill in a form</p>
           </div>
         </div>

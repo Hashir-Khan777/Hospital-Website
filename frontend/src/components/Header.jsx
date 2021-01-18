@@ -20,11 +20,6 @@ const Header = () => {
                     request an appointment
                   </Link>
                 </li>
-                <li className="appointment_items">
-                  <Link to="/" className="appointment_links active">
-                    more demos
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -49,11 +44,8 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  our clinic <i class="fas fa-caret-down"></i>
-                </li>
-                <li className="nav_list_item">
                   <Link to="/" className="nav_links">
-                    departments
+                    dentists
                   </Link>
                 </li>
                 <li className="nav_list_item">
@@ -62,7 +54,9 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  info <i class="fas fa-caret-down"></i>
+                  <Link to="/" className="nav_links">
+                    privacy policy
+                  </Link>
                 </li>
                 <li className="nav_list_item">
                   <Link to="/" className="nav_links">
@@ -72,11 +66,6 @@ const Header = () => {
                 <li className="nav_list_item">
                   <Link to="/" className="nav_links">
                     contact
-                  </Link>
-                </li>
-                <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
-                    shop
                   </Link>
                 </li>
                 <li className="nav_list_item">

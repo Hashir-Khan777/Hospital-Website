@@ -81,7 +81,7 @@ const Featured = () => {
 
             <button className="check_services">
               <i class="fas fa-microscope newspaper_icon"></i>
-              CHECKOUT ALL DEPARTMENTS
+              CHECKOUT ALL SERVICES
             </button>
           </div>
         </div>
@@ -92,38 +92,38 @@ const Featured = () => {
           <ul className="hours_list">
             <li className="hours_item">
               <div className="days">MONDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">TUESDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">WEDNESDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">THURSDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">FRIDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">SATURDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">10:00am – 9:00pm</div>
             </li>
             <li className="hours_item">
               <div className="days">SUNDAY</div>
-              <div className="timing">09:00-20:00</div>
+              <div className="timing">By Appointment Only</div>
             </li>
           </ul>
 
           <div className="fees_insurance">
             <h3>FEES & INSURANCE</h3>
             <p>
-              For the convenience of our clients the Medicus Health Center and
+              For the convenience of our clients the ZIA MEDICAL CARE and
               Hospital provides direct insurance billing with all the major
               international insurance providers and assistance companies.
             </p>
