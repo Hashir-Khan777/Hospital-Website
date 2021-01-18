@@ -1,15 +1,10 @@
 .featured_component {
-  position: absolute;
-  top: 2140px;
+  margin: 100px 0;
   color: #323232;
 }
 
 .heading_tagline_featured {
   margin-left: 20px;
-}
-
-.featured_first_section {
-  width: 50%;
 }
 
 .featured_components {
@@ -22,6 +17,7 @@
 .service_component {
   position: relative;
   width: 250px;
+  height: auto;
   border: solid 1px #45aaff;
   text-align: center;
   color: #323232;
@@ -96,4 +92,19 @@
 
 .featured_content_paragraph {
   margin: 0 30px;
+}
+
+.image_service figure {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+}
+
+.image_service figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

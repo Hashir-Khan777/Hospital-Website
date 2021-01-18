@@ -1,6 +1,5 @@
 .footer {
-  position: absolute;
-  top: 2650px;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -76,4 +75,20 @@
 
 .quick_access_links:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.copy_right {
+  position: relative;
+  width: 100%;
+  background-color: #222d3f;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fiverr_link {
+  color: #fff;
+  margin-left: 3px;
 }

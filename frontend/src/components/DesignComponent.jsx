@@ -19,7 +19,9 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more">MORE</Link>
+        <Link className="more" to="/">
+          MORE
+        </Link>
       </div>
 
       <div className="skew_box skew_two">
@@ -36,7 +38,9 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more">MORE</Link>
+        <Link className="more" to="/">
+          MORE
+        </Link>
       </div>
 
       <div className="skew_box skew_three">
@@ -53,7 +57,9 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more">MORE</Link>
+        <Link className="more" to="/">
+          MORE
+        </Link>
       </div>
 
       <div className="skew_box skew_four">
@@ -70,7 +76,9 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more">MORE</Link>
+        <Link className="more" to="/">
+          MORE
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 20px !important;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.block {
+  display: block;
+}
+
+.top:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s linear;
+}

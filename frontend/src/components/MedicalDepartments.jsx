@@ -87,7 +87,7 @@ const MedicalDepartments = () => {
 
           <button className="departments_button">
             <div className="department_icon">
-              <i class="fas fa-download download_icon"></i>
+              <i className="fas fa-download download_icon"></i>
             </div>
             CHECKOUT ALL DOCTORS
           </button>

@@ -33,15 +33,15 @@ const Footer = () => {
           <div className="foter_contact">
             <ul className="contact_list">
               <li className="contact_item">
-                <i class="fas fa-phone-alt icon"></i>
+                <i className="fas fa-phone-alt icon"></i>
                 +923002278864
               </li>
               <li className="contact_item">
-                <i class="fas fa-envelope icon"></i>
+                <i className="fas fa-envelope icon"></i>
                 hello@ziadentalcare.pk
               </li>
               <li className="contact_item">
-                <i class="fas fa-map-marker-alt icon"></i>
+                <i className="fas fa-map-marker-alt icon"></i>
                 <a
                   href="https://www.google.com/maps/place/Zia+Dental+Care+(Best+Female+Dentist+in+Clifton+Karachi)+%2F+(+Best+Dental+Clinic+in+Karachi)+%2F+(Best+Pediatric+Dentist)/@24.8401085,67.0302905,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33dd977094077:0xf991a85dab6d0f0f!8m2!3d24.8401036!4d67.0324792"
                   target="_maps"
@@ -77,8 +77,13 @@ const Footer = () => {
               </Link>
             </li>
             <li className="quick_links_item">
-              <Link to="/" className="quick_access_links">
+              <Link to="/blog" className="quick_access_links">
                 blog
+              </Link>
+            </li>
+            <li className="quick_links_item">
+              <Link to="/landingpage" className="quick_access_links">
+                landing Page
               </Link>
             </li>
             <li className="quick_links_item">
@@ -87,6 +92,26 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="copy_right">
+        <div className="all_rights_reserved">
+          <p>
+            Copyright <i className="fas fa-copyright"></i>{" "}
+            {new Date().getFullYear()} all rights reserved
+          </p>
+        </div>
+        <div className="designed by">
+          <p>
+            Designed By:
+            <a
+              className="fiverr_link"
+              href="https://www.fiverr.com/hashirkhan33?up_rollout=true"
+              target="_fiverr"
+            >
+              Muhammad Hashir Khan
+            </a>
+          </p>
         </div>
       </div>
     </div>

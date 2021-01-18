@@ -6,7 +6,7 @@ const Featured = () => {
   return (
     <div className="featured_component">
       <div className="heading_tagline_featured">
-        <h1>FEATURED SERVICES</h1>
+        <h1>OUR SERVICES</h1>
         <p>We cover a big variety of medical services</p>
       </div>
 
@@ -17,13 +17,12 @@ const Featured = () => {
               <div className="image_service">
                 <Link to="/">
                   <figure>
-                    <img src="/images/checkup.png" alt="" />
+                    <img src="/images/generalcheckups.png" alt="" />
                   </figure>
                 </Link>
               </div>
               <div className="servise_content">
-                <h3>FREE CHECKUP</h3>
-                <p>The basis of Wellness</p>
+                <h3>GENERAL CHECKUPS</h3>
               </div>
               <div className="more_services">
                 <Link className="more_services_link" to="/">
@@ -36,13 +35,12 @@ const Featured = () => {
               <div className="image_service">
                 <Link to="/">
                   <figure>
-                    <img src="/images/checkup.png" alt="" />
+                    <img src="/images/dentalimplants.png" alt="" />
                   </figure>
                 </Link>
               </div>
               <div className="servise_content">
-                <h3>FREE CHECKUP</h3>
-                <p>The basis of Wellness</p>
+                <h3>DENTAL IMPLANTS</h3>
               </div>
               <div className="more_services">
                 <Link className="more_services_link" to="/">
@@ -55,13 +53,12 @@ const Featured = () => {
               <div className="image_service">
                 <Link to="/">
                   <figure>
-                    <img src="/images/checkup.png" alt="" />
+                    <img src="/images/rootcanal.png" alt="" />
                   </figure>
                 </Link>
               </div>
               <div className="servise_content">
-                <h3>FREE CHECKUP</h3>
-                <p>The basis of Wellness</p>
+                <h3>ROOT CANAL</h3>
               </div>
               <div className="more_services">
                 <Link className="more_services_link" to="/">
@@ -72,15 +69,20 @@ const Featured = () => {
           </div>
           <div className="featured_content_paragraph">
             <p>
-              Personalized patient care is what sets Medicus Medical Center
-              apart. When you visit one of our four San Francisco campus
-              locations you can expect to receive world class care. Expert
-              physician specialists and caring clinical staff provide you with
-              an exceptional health care experience.
+              Our aim is to provide our patients with the best and advanced
+              dental care by our team of dental professionals who are
+              experienced and committed to providing our patients with quality
+              treatment. Zia dental care believes to serve our patients with
+              quick, and less painful dental procedures and intraoral healthcare
+              for all dental problems to meet their expectations with a bright
+              smile. Our female dentist, Dr. Aimen Zia is one of the best female
+              dentists in Karachi, a dedicated professional with an experience
+              of more than a decade, who serves to provide you with the best
+              solutions and recommendations to all your dental problems.
             </p>
 
             <button className="check_services">
-              <i class="fas fa-microscope newspaper_icon"></i>
+              <i className="fas fa-microscope newspaper_icon"></i>
               CHECKOUT ALL SERVICES
             </button>
           </div>
@@ -121,11 +123,13 @@ const Featured = () => {
           </ul>
 
           <div className="fees_insurance">
-            <h3>FEES & INSURANCE</h3>
+            <h3>CERTIFIED EXPERTS</h3>
             <p>
-              For the convenience of our clients the ZIA MEDICAL CARE and
-              Hospital provides direct insurance billing with all the major
-              international insurance providers and assistance companies.
+              As a team of Top Dentists in Karachi, we are experienced and
+              committed to providing our patients with quality treatment. During
+              the entire process, we make it most priority to have full
+              transparency and open communication with our patients at all times
+              to make sure they are aware of their treatment progress.
             </p>
           </div>
         </div>

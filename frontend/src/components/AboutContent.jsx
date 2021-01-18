@@ -25,23 +25,24 @@ const AboutContent = () => {
           <div className="facilities_content">
             <h1>MODERN MEDICAL FACILITIES</h1>
             <p>
-              Personalized patient care is what sets Medicus Medical Center
-              apart. When you visit one of our four San Francisco campus
-              locations you can expect to receive world class care. Expert
-              physician specialists and caring clinical staff provide you with
-              an exceptional health care experience.
+              We are providing specialized and top dental services in Karachi
+              for all dental treatments and online dental video consultations in
+              Pakistan. Zia Dental care is focusing on using the latest
+              techniques in dentistry like Natural Dental Products, Laser
+              Dentistry, Dental Group Practices, Improving The Patient
+              Experience & Automated Patient Tracking & Management Software, etc
             </p>
           </div>
           <div className="checkout_button">
             <button className="check_services">
-              <i class="far fa-newspaper newspaper_icon"></i>
+              <i className="far fa-newspaper newspaper_icon"></i>
               CHECKOUT OUR FACILITIES
             </button>
           </div>
         </div>
 
         <div className="about_image_section">
-          <Link>
+          <Link to="/">
             <div className="image_content">
               <figure>
                 <img src="/images/outside.jpg" alt="" />

@@ -1,0 +1,56 @@
+.image_blog figure {
+  position: relative;
+}
+
+.image_blog figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog_head {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(40, 60, 94, 0.5);
+  color: #fff;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.blog_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blogs {
+  margin: 25px 0;
+  width: 50%;
+  text-align: justify;
+}
+
+.blogs h1 {
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.written_blogs {
+  margin: 20px 0;
+}
+
+.blog_section_image figure {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.blog_section_image figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.categories_section {
+  margin: 40px 0;
+}

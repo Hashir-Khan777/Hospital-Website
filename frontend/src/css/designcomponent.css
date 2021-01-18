@@ -1,16 +1,17 @@
 .design_component {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  position: absolute;
-  top: 650px;
   width: 100%;
   color: #efefef;
   font-size: 11px;
+  margin-bottom: 50px;
   transition: all 0.5s linear;
 }
 
 .skew_box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;

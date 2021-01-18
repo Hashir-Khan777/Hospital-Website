@@ -24,7 +24,7 @@ const Header = () => {
             </div>
 
             <div className="emmergency_number">
-              <i class="fas fa-ambulance"></i>
+              <i className="fas fa-ambulance"></i>
               <p className="emmergecncy_call">Emergency Line: +923002278864</p>
             </div>
           </div>
@@ -55,21 +55,11 @@ const Header = () => {
                 </li>
                 <li className="nav_list_item">
                   <Link to="/" className="nav_links">
-                    privacy policy
-                  </Link>
-                </li>
-                <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
-                    blog
-                  </Link>
-                </li>
-                <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
                     contact
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  <i class="fas fa-share-alt"></i>
+                  <i className="fas fa-share-alt"></i>
                 </li>
               </ul>
             </div>

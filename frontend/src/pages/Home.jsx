@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MedicalDepartments from "../components/MedicalDepartments";
 import Slider from "../components/Slider";
+import Top from "../components/Top";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <MedicalDepartments />
       <Featured />
       <Footer />
+      <Top />
     </div>
   );
 };
