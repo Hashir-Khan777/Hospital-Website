@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 150px;
+  top: 650px;
   width: 100%;
   color: #efefef;
   font-size: 11px;
@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 230px;
-  height: 200px;
+  width: 270px;
+  height: 235px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }

@@ -1,0 +1,98 @@
+.featured_component {
+  position: absolute;
+  top: 2140px;
+  color: #323232;
+}
+
+.heading_tagline_featured {
+  margin-left: 20px;
+}
+
+.featured_first_section {
+  width: 50%;
+}
+
+.featured_components {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_component {
+  position: relative;
+  width: 250px;
+  border: solid 1px #45aaff;
+  text-align: center;
+  color: #323232;
+  padding: 30px 0;
+  margin: 20px 10px;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.servise_content {
+  margin: 10px 0;
+}
+
+.more_services {
+  position: absolute;
+  bottom: -14px;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.more_services_link {
+  font-size: 13px;
+  color: #fff;
+  background-color: #45aaff;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.service_component:hover > .more_services {
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.featured_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.hours_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.featured_first_section {
+  width: 70%;
+}
+
+.featured_second_section {
+  width: 30%;
+}
+
+.featured_second_section > h2 {
+  margin-bottom: 30px;
+}
+
+.fees_insurance {
+  margin-top: 20px;
+}
+
+.fees_insurance > h3 {
+  margin-bottom: 10px;
+}
+
+.featured_content > p {
+  font-size: 14px;
+}
+
+.featured_content_paragraph {
+  margin: 0 30px;
+}

@@ -1,4 +1,116 @@
 .medical_departments {
   position: absolute;
-  top: 1000px;
+  top: 1500px;
+  background-color: #304770;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  padding: 30px 30px 150px 30px;
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+}
+
+.meical_heading_tagline {
+  margin: 20px 0;
+}
+
+.medical_card_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.medical_card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: #e5e5e5;
+  color: #323232;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.medical_card_image figure {
+  position: relative;
+  width: 250px;
+  height: 30vh;
+}
+
+.medical_card_image figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.medical_image_content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.medical_department_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.see_more_link {
+  position: absolute;
+  bottom: -16px;
+  right: 50%;
+  transform: translate(50%);
+  background-color: #007cba;
+  font-size: 11px;
+  padding: 3px 5px;
+  margin-top: 10px;
+  color: #efefef;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.medical_card:hover .see_more_link {
+  bottom: 0;
+}
+
+.modern_equipments {
+  width: 380px;
+  text-align: justify;
+  font-size: 13px;
+}
+
+.modern_equipments > h1 {
+  margin-bottom: 20px;
+}
+
+.departments_button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer !important;
+  background: none;
+  border: none;
+  background-color: #45aaff;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.department_icon {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #0079de !important;
+}
+
+.departments_button:hover {
+  background-color: #1293ff !important;
 }

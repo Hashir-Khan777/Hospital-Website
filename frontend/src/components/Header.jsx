@@ -33,7 +33,7 @@ const Header = () => {
               <p className="emmergecncy_call">Emergency Line: +923002278864</p>
             </div>
           </div>
-          <hr />
+
           <div className="logo_nav_section">
             <div className="logo">
               <Link className="header_logo" to="/">
@@ -78,9 +78,6 @@ const Header = () => {
                   <Link to="/" className="nav_links">
                     shop
                   </Link>
-                </li>
-                <li className="nav_list_item">
-                  more <i class="fas fa-caret-down"></i>
                 </li>
                 <li className="nav_list_item">
                   <i class="fas fa-share-alt"></i>

@@ -5,7 +5,7 @@ header {
   color: #555;
   padding: 10px 100px;
   z-index: 999;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #ddd;
 }
 
 .appointment_links {
@@ -17,6 +17,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
   margin: 15px 0;
 }
 

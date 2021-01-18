@@ -1,6 +1,6 @@
 .about_content {
   position: absolute;
-  top: 430px;
+  top: 960px;
 }
 
 .facilities_content {
@@ -70,28 +70,29 @@
 }
 
 .giude {
+  position: relative;
   display: grid;
   place-items: center;
   text-align: center;
   background-color: #45aaff;
   color: #fff;
-  padding: 15px 0;
+  height: 100px;
+  padding: 25px 0;
+  overflow: hidden;
 }
 
 .more_guide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: -20px;
   background-color: #304770;
   font-size: 11px;
   padding: 3px 5px;
   margin-top: 10px;
-  /* display: none; */
   color: #efefef;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .image_content:hover .more_guide {
-  display: block;
+  bottom: 0;
 }

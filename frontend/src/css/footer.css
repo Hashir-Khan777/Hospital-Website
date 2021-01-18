@@ -1,0 +1,26 @@
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2650px;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../doctorBlue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.footer_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 255, 0.4);
+}

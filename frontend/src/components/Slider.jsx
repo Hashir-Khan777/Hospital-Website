@@ -4,7 +4,9 @@ import "../css/slider.css";
 const Slider = () => {
   return (
     <div className="header_slider">
-      <h1>Slider</h1>
+      <figure>
+        <img src="/images/outside.jpg" alt="" />
+      </figure>
     </div>
   );
 };

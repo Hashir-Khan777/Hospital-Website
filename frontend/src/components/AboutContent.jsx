@@ -49,9 +49,9 @@ const AboutContent = () => {
               <div className="giude">
                 <h3>PATIENT & VISITOR GUIDE</h3>
                 <p>Plan your visit to our Clinic</p>
+                <p className="more_guide">MORE</p>
               </div>
             </div>
-            <p className="more_guide">MORE</p>
           </Link>
         </div>
       </div>
