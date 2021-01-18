@@ -1,0 +1,13 @@
+.copy_right {
+  background-color: #222d3f;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fiverr_link {
+  color: #fff;
+  margin-left: 3px;
+}

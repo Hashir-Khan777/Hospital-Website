@@ -21,6 +21,7 @@ header {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
   margin: 15px 0;
+  animation: stick 0.5s linear;
 }
 
 .appointment_list {
@@ -74,6 +75,11 @@ header {
   color: #555;
 }
 
+.nav_links:active,
+.nav_links:visited {
+  color: #58a8ff;
+}
+
 .nav_links:hover,
 .appointment_links:hover,
 .nav_list_item:hover {
@@ -82,4 +88,13 @@ header {
 
 .active {
   color: #58a8ff;
+}
+
+@keyframes stick {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

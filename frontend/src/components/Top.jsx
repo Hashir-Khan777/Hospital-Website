@@ -2,7 +2,7 @@ import React from "react";
 import "../css/top.css";
 
 const Top = () => {
-  window.addEventListener("scroll", function () {
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 2000) {
       document.querySelector(".top").classList.add("block");
     } else {

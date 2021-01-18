@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/footer.css";
 import { Link } from "react-router-dom";
+import CopyRight from "./CopyRight";
 
 const Footer = () => {
   return (
@@ -72,7 +73,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="quick_links_item">
-              <Link to="/" className="quick_access_links">
+              <Link to="/privacypolicy" className="quick_access_links">
                 privacy policy
               </Link>
             </li>
@@ -87,33 +88,14 @@ const Footer = () => {
               </Link>
             </li>
             <li className="quick_links_item">
-              <Link to="/" className="quick_access_links">
+              <Link to="/contact" className="quick_access_links">
                 contact
               </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="copy_right">
-        <div className="all_rights_reserved">
-          <p>
-            Copyright <i className="fas fa-copyright"></i>{" "}
-            {new Date().getFullYear()} all rights reserved
-          </p>
-        </div>
-        <div className="designed by">
-          <p>
-            Designed By:
-            <a
-              className="fiverr_link"
-              href="https://www.fiverr.com/hashirkhan33?up_rollout=true"
-              target="_fiverr"
-            >
-              Muhammad Hashir Khan
-            </a>
-          </p>
-        </div>
-      </div>
+      <CopyRight />
     </div>
   );
 };

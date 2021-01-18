@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import "../css/header.css";
 
 const Header = () => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 600) {
+      document.querySelector(".upper_section").style.display = "none";
+    } else {
+      document.querySelector(".upper_section").style.display = "flex";
+    }
+  });
+
   return (
     <div className="header">
       <header>
@@ -54,7 +62,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
+                  <Link to="/contact" className="nav_links">
                     contact
                   </Link>
                 </li>

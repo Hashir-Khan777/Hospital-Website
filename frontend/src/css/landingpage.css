@@ -6,3 +6,83 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+.page_for_form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.page_for_form h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.landing_page_copyright {
+  position: absolute;
+  top: 93.9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222d3f;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.landing_lablels {
+  color: #fff;
+  font-weight: 900;
+}
+
+fieldset {
+  position: relative;
+  border: none;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.landing_input {
+  width: 150%;
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  background: #efefef;
+  font-size: 17px;
+  margin: 0px 0 20px 0;
+}
+
+textarea {
+  width: 150%;
+  height: 20vh;
+  background: none;
+  border: none;
+  font-size: 17px;
+  background: #efefef;
+  padding: 6px 10px;
+}
+
+.landing_submit {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #45aaff;
+  background-color: #45aaff;
+  width: 150%;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.landing_submit:hover {
+  background: none;
+  transition: all 0.4s ease-in-out;
+}
