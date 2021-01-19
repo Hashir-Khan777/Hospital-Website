@@ -1,0 +1,108 @@
+.one_dentist_content {
+  position: relative;
+  top: 150px;
+}
+
+.doctor_image_and_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-bottom: 1px solid #58a8ff;
+}
+
+.doctor_profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.doctor_content {
+  width: 50%;
+}
+
+.doctor_name {
+  margin: 10px 20px;
+}
+
+.doctor_name h1 {
+  color: #58a8ff;
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.doctor_services,
+.conditions,
+.doctor_education,
+.about_doctor {
+  margin: 20px 0;
+}
+
+.doctor_services h2,
+.conditions h2,
+.doctor_education h2,
+.about_doctor h2 {
+  color: #58a8ff;
+  margin-bottom: 5px;
+}
+
+.serivice_list li,
+.condition_list li,
+.education_list li {
+  list-style: circle;
+  margin: 10px 0;
+}
+
+.side_bar_content {
+  width: 25%;
+}
+
+.waiting_time p {
+  color: #58a8ff;
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.working_hours_item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.fees {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fees p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.write_review_input {
+  width: 60%;
+  margin: 10px 20px;
+  border: 1px solid black;
+}
+
+.submit_review {
+  display: block;
+  margin: 10px 20px;
+  border: none;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid #58a8ff;
+  font-size: 20px;
+  color: #58a8ff;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.submit_review:hover {
+  color: #fff;
+  background-color: #58a8ff;
+  transition: all 0.3s ease;
+}

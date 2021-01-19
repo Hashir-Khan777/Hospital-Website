@@ -20,8 +20,8 @@ const Dentist = () => {
 
   return (
     <div className="dentist">
-      <Header />
       <div className="dentists_content">
+        <Header />
         <h1>OUR EXPERT DENTISTS</h1>
         <ul className="dentists_list">
           {loading ? (
@@ -41,7 +41,7 @@ const Dentist = () => {
                     <h1 className="doctor_name">{doctor.name}</h1>
                     <p>{doctor.education}</p>
                     <Link
-                      to={`/dentist/${doctor.name}/${doctor._id}`}
+                      to={`/dentist/${doctor._id}/${doctor.name}`}
                       className="dental_links"
                     >
                       View Profile
@@ -52,8 +52,8 @@ const Dentist = () => {
             })
           )}
         </ul>
+        <Footer />
       </div>
-      <Footer />
       <Top />
     </div>
   );

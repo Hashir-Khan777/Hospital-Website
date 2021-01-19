@@ -17,7 +17,11 @@ const Approuter = () => {
       <Route exact={true} path="/privacypolicy" component={Privacy} />
       <Route exact={true} path="/contact" component={Contact} />
       <Route exact={true} path="/dentist" component={Dentist} />
-      <Route path={`/dentist/:doctorname/:id`} component={OneDoctor} />
+      <Route
+        exact={true}
+        path="/dentist/:id/:doctorname"
+        component={OneDoctor}
+      />
     </Router>
   );
 };
