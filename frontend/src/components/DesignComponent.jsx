@@ -19,7 +19,7 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more" to="/">
+        <Link className="more" to="/dentist">
           MORE
         </Link>
       </div>
@@ -57,7 +57,7 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more" to="/">
+        <Link className="more" to="/contact">
           MORE
         </Link>
       </div>
@@ -76,7 +76,7 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more" to="/">
+        <Link className="more" to="/appointment">
           MORE
         </Link>
       </div>

@@ -41,6 +41,14 @@
   position: relative;
   color: #fff;
   background-color: #58a8ff;
+  border: 1px solid #58a8ff;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 9px 18px;
+  transition: all 0.3s linear;
+}
+
+.dental_links:hover {
+  background: transparent;
+  color: #58a8ff;
+  transition: all 0.3s linear;
 }

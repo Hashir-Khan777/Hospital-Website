@@ -5,6 +5,7 @@ import Contact from "../pages/Contact";
 import Dentist from "../pages/Dentist";
 import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
+import OneDoctor from "../pages/OneDoctor";
 import Privacy from "../pages/Privacy";
 
 const Approuter = () => {
@@ -16,6 +17,7 @@ const Approuter = () => {
       <Route exact={true} path="/privacypolicy" component={Privacy} />
       <Route exact={true} path="/contact" component={Contact} />
       <Route exact={true} path="/dentist" component={Dentist} />
+      <Route path={`/dentist/:doctorname/:id`} component={OneDoctor} />
     </Router>
   );
 };

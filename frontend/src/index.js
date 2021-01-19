@@ -4,11 +4,13 @@ import Hospital from "./Hospital";
 import reportWebVitals from "./reportWebVitals";
 import "./css/basic.css";
 import "./FontAwesome/css/all.css";
+import { Provider } from "react-redux";
+import Store from "./store/Store";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={Store}>
     <Hospital />
-  </React.StrictMode>,
+  </Provider>,
   document.querySelector(".Hospital_Website")
 );
 

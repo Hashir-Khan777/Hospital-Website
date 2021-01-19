@@ -15,7 +15,7 @@ const Top = () => {
 
   return (
     <div className="top" onClick={go_top}>
-      <i class="fas fa-chevron-up"></i>
+      <i className="fas fa-chevron-up"></i>
     </div>
   );
 };

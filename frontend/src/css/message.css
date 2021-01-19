@@ -1,0 +1,10 @@
+.message {
+  width: 100%;
+  height: 67vh;
+}
+
+.error {
+  color: #a02020;
+  background-color: #ffe0e0;
+  padding: 20px;
+}
