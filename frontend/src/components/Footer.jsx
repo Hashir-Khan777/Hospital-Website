@@ -19,7 +19,11 @@ const Footer = () => {
       <div className="footer_lower_section">
         <div className="logo_content_section">
           <div className="footer_logo">
-            <Link to="/">LOGO</Link>
+            <Link className="footer_logo_image" to="/">
+              <figure>
+                <img src="/favicon.ico" alt="" />
+              </figure>
+            </Link>
           </div>
           <div className="footer_content">
             <p>
@@ -68,7 +72,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="quick_links_item">
-              <Link to="/" className="quick_access_links">
+              <Link to="/services" className="quick_access_links">
                 services
               </Link>
             </li>

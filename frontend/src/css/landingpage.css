@@ -86,3 +86,16 @@ textarea {
   background: none;
   transition: all 0.4s ease-in-out;
 }
+
+.header_logo_landing_page figure {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.header_logo_landing_page figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

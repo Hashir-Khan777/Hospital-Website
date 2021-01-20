@@ -45,29 +45,42 @@ const OneDoctor = (props) => {
                 <div className="doctor_services">
                   <h2>Services</h2>
                   <ul className="serivice_list">
-                    <li className="service_item">Cosmetic Dentistry</li>
-                    <li className="service_item">
-                      Aesthetic Crown And Bridges
-                    </li>
-                    <li className="service_item">Dental Hygiene</li>
+                    {doctor.services &&
+                      doctor.services.split(",").map((service) => {
+                        return (
+                          <li key={doctor._id} className="service_item">
+                            {service}
+                          </li>
+                        );
+                      })}
                   </ul>
                 </div>
 
                 <div className="conditions">
                   <h2>Condition Treated</h2>
                   <ul className="condition_list">
-                    <li className="condition_item">Cavities</li>
-                    <li className="condition_item">Dental Caries</li>
-                    <li className="condition_item">Gingivitis</li>
+                    {doctor.condition &&
+                      doctor.condition.split(",").map((service) => {
+                        return (
+                          <li key={doctor._id} className="condition_item">
+                            {service}
+                          </li>
+                        );
+                      })}
                   </ul>
                 </div>
 
                 <div className="doctor_education">
                   <h2>Education</h2>
                   <ul className="education_list">
-                    <li className="education_item">B.D.S, 2012</li>
-                    <li className="education_item">C-Ortho</li>
-                    <li className="education_item">C-Endo</li>
+                    {doctor.education &&
+                      doctor.education.split(",").map((service) => {
+                        return (
+                          <li key={doctor._id} className="condition_item">
+                            {service}
+                          </li>
+                        );
+                      })}
                   </ul>
                 </div>
 
@@ -102,22 +115,6 @@ const OneDoctor = (props) => {
                   <p>Rs. {doctor.fees}</p>
                 </div>
               </div>
-            </div>
-            <div className="reviews">
-              <ul className="review_list">
-                <li className="review_item">Hello</li>
-                <li className="review_item">Hello World</li>
-                <li className="review_item">Hello how r u</li>
-              </ul>
-            </div>
-            <div className="write_review">
-              <textarea
-                className="write_review_input"
-                cols="30"
-                rows="10"
-                placeholder="write a review..."
-              ></textarea>
-              <button className="submit_review">Submit</button>
             </div>
           </div>
         )}

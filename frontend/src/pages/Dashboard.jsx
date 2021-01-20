@@ -17,7 +17,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="doctors">
-        <div className="header">
+        <div className="header_dashboard">
           <ul className="header_list">
             <li className="header_item">Appointments</li>
             <li className="header_item">Messages</li>

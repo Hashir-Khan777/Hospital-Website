@@ -35,7 +35,9 @@ const Header = () => {
           <div className="logo_nav_section">
             <div className="logo">
               <Link className="header_logo" to="/">
-                logo
+                <figure>
+                  <img src="/favicon.ico" alt="" />
+                </figure>
               </Link>
             </div>
 
@@ -52,7 +54,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
+                  <Link to="/services" className="nav_links">
                     services
                   </Link>
                 </li>

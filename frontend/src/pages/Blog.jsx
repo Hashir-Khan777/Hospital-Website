@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Top from "../components/Top";
 import "../css/blog.css";
 
 const Blog = () => {
@@ -60,6 +61,7 @@ const Blog = () => {
         </div>
       </div>
       <Footer />
+      <Top />
     </div>
   );
 };

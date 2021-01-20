@@ -7,7 +7,7 @@ const Dentist = new Schema({
     required: [true, "name is required"],
   },
   education: {
-    type: Array,
+    type: String,
     required: [true, "education is required"],
   },
   experience: {
@@ -23,7 +23,7 @@ const Dentist = new Schema({
     required: [true, "wait time is required"],
   },
   services: {
-    type: Array,
+    type: String,
     required: [true, "services are required"],
   },
   checkup: {
@@ -55,7 +55,7 @@ const Dentist = new Schema({
     required: [true, "working hours is required"],
   },
   condition: {
-    type: Array,
+    type: String,
     required: [true, "condition treated are required"],
   },
   isAdmin: {

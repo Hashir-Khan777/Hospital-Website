@@ -9,7 +9,7 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-.appointment_links {
+header .appointment_links {
   color: #555;
 }
 
@@ -97,4 +97,17 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+.header_logo figure {
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.header_logo figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -10,8 +10,10 @@ const LandingPage = () => {
         <header>
           <div className="logo_nav_section">
             <div className="logo">
-              <Link className="header_logo" to="/">
-                logo
+              <Link className="header_logo_landing_page" to="/">
+                <figure>
+                  <img src="/favicon.ico" alt="" />
+                </figure>
               </Link>
             </div>
 
@@ -23,12 +25,12 @@ const LandingPage = () => {
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
+                  <Link to="/dentist" className="nav_links">
                     dentists
                   </Link>
                 </li>
                 <li className="nav_list_item">
-                  <Link to="/" className="nav_links">
+                  <Link to="/services" className="nav_links">
                     services
                   </Link>
                 </li>

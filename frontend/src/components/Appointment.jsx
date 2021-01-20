@@ -6,7 +6,7 @@ import "../css/appointment.css";
 import Top from "./Top";
 import { AppointmentBooked } from "../store/action/GetDoctors";
 
-const Appointment = () => {
+const Appointment = (props) => {
   const dispatch = useDispatch();
 
   const [name, setName] = useState();
@@ -17,18 +17,18 @@ const Appointment = () => {
   const [appointmentDate, setappointmentDate] = useState();
   const [depart, setDepart] = useState();
 
-  const appointmentBooked = (e) => {
-    e.preventDefault();
+  const appointmentBooked = () => {
     dispatch(
       AppointmentBooked(name, email, dob, num, sex, appointmentDate, depart)
     );
+    props.history.push("/");
   };
   return (
     <div className="appointment">
       <Header />
       <div className="appointment_booking">
         <div className="appointment_form">
-          <form method="POST" onSubmit={appointmentBooked}>
+          <form method="POST" action="/" onSubmit={appointmentBooked}>
             <fieldset>
               <legend>
                 <h1>Book an Appointment</h1>
@@ -129,9 +129,18 @@ const Appointment = () => {
                       onChange={(e) => setDepart(e.target.value)}
                     >
                       <option value="0">Department</option>
-                      <option value="depart1">depart1</option>
-                      <option value="depart2">depart2</option>
-                      <option value="depart3">depart3</option>
+                      <option value="General Dentistry">
+                        General Dentistry
+                      </option>
+                      <option value="Cosmetic Dentisry">
+                        Cosmetic Dentisry
+                      </option>
+                      <option value="Surgical Dentistry">
+                        Surgical Dentistry
+                      </option>
+                      <option value="Orthodonic Dentistry">
+                        Orthodonic Dentistry
+                      </option>
                     </select>
                   </td>
                 </tr>

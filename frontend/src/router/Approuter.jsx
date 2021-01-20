@@ -10,6 +10,7 @@ import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
 import OneDoctor from "../pages/OneDoctor";
 import Privacy from "../pages/Privacy";
+import Services from "../pages/Services";
 
 const Approuter = () => {
   return (
@@ -25,9 +26,14 @@ const Approuter = () => {
         path="/dentist/:id/:doctorname"
         component={OneDoctor}
       />
-      <Route path="/ziadentalcare/admin" component={AdminLogin} />
-      <Route path="/ziadentalcare/dashboard" component={Dashboard} />
-      <Route path="/appointment" component={Appointment} />
+      <Route exact={true} path="/ziadentalcare/admin" component={AdminLogin} />
+      <Route
+        exact={true}
+        path="/ziadentalcare/dashboard"
+        component={Dashboard}
+      />
+      <Route exact={true} path="/appointment" component={Appointment} />
+      <Route exact={true} path="/services" component={Services} />
     </Router>
   );
 };
