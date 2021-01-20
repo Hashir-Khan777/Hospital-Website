@@ -4,12 +4,22 @@ const dotenv = require("dotenv");
 const expressAsyncHandler = require("express-async-handler");
 const mongoose = require("mongoose");
 const DentistModel = require("./dentistModel.js");
+const AdminModel = require("./adminModel.js");
+const BookedAppointment = require("./appointmentModel.js");
+const bodyParser = require("body-parser");
+const Nexmo = require("nexmo");
+
+const nexmo = new Nexmo({
+  apiKey: "eaac5880",
+  apiSecret: "lzHMDGRBSGdv7iX6",
+});
 
 dotenv.config();
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser());
 
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
@@ -44,6 +54,52 @@ app.get(
     }
   })
 );
+
+app.post(
+  "/api/doctors/admin",
+  expressAsyncHandler(async (req, res) => {
+    const doctor = await AdminModel.findOne({ email: req.body.email });
+
+    if (doctor) {
+      if (doctor.isAdmin === true && doctor.password === req.body.password) {
+        res.send({
+          _id: doctor._id,
+          name: doctor.name,
+          email: doctor.email,
+          isAdmin: doctor.isAdmin,
+        });
+        return;
+      }
+    }
+    res.status(401).send({ message: "Invalid user email or password" });
+  })
+);
+
+app.post(
+  "/api/appointment",
+  expressAsyncHandler(async (req, res) => {
+    const appointment = new BookedAppointment({
+      name: req.body.name,
+      email: req.body.email,
+      dob: req.body.dob,
+      mob: req.body.num,
+      sex: req.body.sex,
+      appointmentDate: req.body.appointmentdate,
+      depart: req.body.depart,
+    });
+    const newAppointment = await appointment.save();
+    const from = "Zia Dental Care";
+    const to = "923142595260";
+    const text = `${newAppointment.name} booke an appointment`;
+    nexmo.message.sendSms(from, to, text);
+    res.send(newAppointment);
+  })
+);
+
+app.get("/api/appointment", async (req, res) => {
+  const booked = await BookedAppointment.find({});
+  res.send(booked);
+});
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

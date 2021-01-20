@@ -1,0 +1,47 @@
+.appointment_booking {
+  position: relative;
+  top: 100px;
+}
+
+.appointment_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment_form h1 {
+  color: #58a8ff;
+}
+
+.appointment_form label {
+  color: #58a8ff;
+  font-weight: 800;
+}
+
+.appointment_form input,
+.appointment_form select {
+  width: 100%;
+  margin: 20px 10px;
+  font-size: 17px;
+  padding: 8px 10px;
+}
+
+.appointment_form button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 20px 0;
+  border: 1px solid #58a8ff;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #58a8ff;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+
+.appointment_form button:hover {
+  background: none;
+  color: #58a8ff;
+  transition: all 0.2s linear;
+}

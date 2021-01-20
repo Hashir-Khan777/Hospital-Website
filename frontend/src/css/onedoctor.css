@@ -106,3 +106,27 @@
   background-color: #58a8ff;
   transition: all 0.3s ease;
 }
+
+.doctor_image figure {
+  position: relative;
+  width: 8vw;
+  height: 20vh;
+}
+
+.doctor_image figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reviews {
+  margin: 0 20px;
+}
+
+.review_item {
+  margin: 20px 10px;
+  padding: 10px;
+  border-bottom: 1px solid #58a8ff;
+  list-style: decimal;
+}

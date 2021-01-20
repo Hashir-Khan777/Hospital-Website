@@ -18,8 +18,6 @@ const OneDoctor = (props) => {
     dispatch(Doctor_Details(doctortId));
   }, [dispatch, doctortId]);
 
-  console.log(doctor);
-
   return (
     <div className="one_dentist">
       <div className="one_dentist_content">
@@ -35,12 +33,12 @@ const OneDoctor = (props) => {
                 <div className="doctor_image_and_content">
                   <div className="doctor_image">
                     <figure>
-                      <img src="/images/aimenzia.jpg" alt="" />
+                      <img src={doctor.image} alt="" />
                     </figure>
                   </div>
                   <div className="doctor_name">
-                    <h1>Dr. Aimen Zia</h1>
-                    <p>10 years expierience</p>
+                    <h1>{doctor.name}</h1>
+                    <p>{doctor.experience} years of experince</p>
                   </div>
                 </div>
 
@@ -75,38 +73,42 @@ const OneDoctor = (props) => {
 
                 <div className="about_doctor">
                   <h2>About</h2>
-                  <p>
-                    Dr. Aiman Zia is a general and cosmetic dentist. Dr. Aiman
-                    Zia is among the best dentists in Karachi. She has a B.D.S,
-                    C-Ortho, and C-Endo degree along with an experience of more
-                    than 10 years.
-                  </p>
+                  <p>{doctor.about}</p>
                 </div>
               </div>
 
               <div className="side_bar_content">
                 <div className="waiting_time">
-                  <p className="time_for_waiting">Under 15 min wait time</p>
+                  <p className="time_for_waiting">
+                    Under {doctor.wait} min wait time
+                  </p>
                 </div>
 
                 <div className="working_hours">
                   <ul className="worlking_hours_list">
                     <li className="working_hours_item">
                       <p>Monday - Saturday</p>
-                      <p>10:00 AM – 11:00 PM</p>
+                      <p>{doctor.mondaysaturday}</p>
                     </li>
                     <li className="working_hours_item">
                       <p>Sunday</p>
-                      <p>01:00 PM – 07:00 PM</p>
+                      <p>{doctor.sunday}</p>
                     </li>
                   </ul>
                 </div>
 
                 <div className="fees">
                   <h2>fees:</h2>
-                  <p>Rs. 1000</p>
+                  <p>Rs. {doctor.fees}</p>
                 </div>
               </div>
+            </div>
+            <div className="reviews">
+              <ul className="review_list">
+                <li className="review_item">Hello</li>
+                <li className="review_item">Hello World</li>
+                <li className="review_item">Hello how r u</li>
+              </ul>
             </div>
             <div className="write_review">
               <textarea

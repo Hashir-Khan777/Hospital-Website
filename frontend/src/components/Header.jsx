@@ -19,12 +19,7 @@ const Header = () => {
             <div className="appointment">
               <ul className="appointment_list">
                 <li className="appointment_items">
-                  <Link to="/" className="appointment_links">
-                    faq
-                  </Link>
-                </li>
-                <li className="appointment_items">
-                  <Link to="/" className="appointment_links">
+                  <Link to="/appointment" className="appointment_links">
                     request an appointment
                   </Link>
                 </li>

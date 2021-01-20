@@ -26,4 +26,58 @@ const Doctor_Details = (productId) => async (dispatch) => {
   }
 };
 
-export { Get_Doctors, Doctor_Details };
+const Admin = (email, password) => async (dispatch) => {
+  dispatch({ type: "ADMIN_SIGNIN_REQUEST", payload: { email, password } });
+  try {
+    const { data } = await Axios.post("/api/doctors/admin", {
+      email,
+      password,
+    });
+    dispatch({ type: "ADMIN_SIGNIN_SUCESS", payload: data });
+  } catch (err) {
+    dispatch({
+      type: "ADMIN_SIGNIN_FAIL",
+      payload:
+        err.response && err.response.data.message
+          ? err.response.data.message
+          : err.message,
+    });
+  }
+};
+
+const AppointmentBooked = (
+  name,
+  email,
+  dob,
+  num,
+  sex,
+  appointmentdate,
+  depart
+) => async (dispatch) => {
+  dispatch({
+    type: "APPOINTMENT_REQUEST",
+    payload: { name, email, dob, num, sex, appointmentdate, depart },
+  });
+  try {
+    const { data } = await Axios.post("/api/appointment", {
+      name,
+      email,
+      dob,
+      num,
+      sex,
+      appointmentdate,
+      depart,
+    });
+    dispatch({ type: "APOINTMENT_SUCESS", payload: data });
+  } catch (err) {
+    dispatch({
+      type: "APPOINTMENT_FAIL",
+      payload:
+        err.response && err.response.data.message
+          ? err.response.data.message
+          : err.message,
+    });
+  }
+};
+
+export { Get_Doctors, Doctor_Details, Admin, AppointmentBooked };

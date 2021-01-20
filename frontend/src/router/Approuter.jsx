@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import AdminLogin from "../components/AdminLogin";
+import Appointment from "../components/Appointment";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
+import Dashboard from "../pages/Dashboard";
 import Dentist from "../pages/Dentist";
 import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
@@ -22,6 +25,9 @@ const Approuter = () => {
         path="/dentist/:id/:doctorname"
         component={OneDoctor}
       />
+      <Route path="/ziadentalcare/admin" component={AdminLogin} />
+      <Route path="/ziadentalcare/dashboard" component={Dashboard} />
+      <Route path="/appointment" component={Appointment} />
     </Router>
   );
 };
