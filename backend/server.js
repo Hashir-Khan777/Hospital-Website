@@ -10,8 +10,8 @@ const bodyParser = require("body-parser");
 const Nexmo = require("nexmo");
 
 const nexmo = new Nexmo({
-  apiKey: "eaac5880",
-  apiSecret: "lzHMDGRBSGdv7iX6",
+  apiKey: process.env.APIKEY,
+  apiSecret: process.env.APISECRET,
 });
 
 dotenv.config();
@@ -88,10 +88,14 @@ app.post(
       depart: req.body.depart,
     });
     const newAppointment = await appointment.save();
-    const from = "Zia Dental Care";
-    const to = "923142595260";
-    const text = `${newAppointment.name} booke an appointment`;
-    nexmo.message.sendSms(from, to, text);
+    // const from = "Zia Dental";
+    // const to = process.env.NUMBER;
+    // const text = `${newAppointment.name} booked an appointment for ${
+    //   newAppointment.depart
+    // }, ${newAppointment.sex == "female" ? "her" : "his"} number is ${
+    //   newAppointment.mob
+    // }`;
+    // nexmo.message.sendSms(from, to, text);
     res.send(newAppointment);
   })
 );
