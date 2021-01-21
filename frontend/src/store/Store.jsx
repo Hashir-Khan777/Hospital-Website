@@ -5,6 +5,7 @@ import {
   AppointmentReducer,
   DoctorDetailsReducer,
   GetDoctorsReducer,
+  MessageReducer,
 } from "./reducer/DoctorReducer";
 
 const reducer = combineReducers({
@@ -12,6 +13,7 @@ const reducer = combineReducers({
   doctorDetails: DoctorDetailsReducer,
   adminReducer: AdminSigninReducer,
   appointmentReducer: AppointmentReducer,
+  messageReducer: MessageReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

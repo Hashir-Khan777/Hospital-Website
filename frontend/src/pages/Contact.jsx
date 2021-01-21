@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../css/contact.css";
 import Top from "../components/Top";
+import { useDispatch } from "react-redux";
+import { Messages } from "../store/action/GetDoctors";
 
-const Contact = () => {
+const Contact = (props) => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [feedback, setFeedback] = useState();
+
+  const dispatch = useDispatch();
+
+  const contactMessage = (e) => {
+    e.preventDefault();
+    dispatch(Messages(name, email, feedback));
+    props.history.push("/");
+  };
+
   return (
     <div className="contact_form">
       <Header />
       <div className="contact_form_content">
-        <form action="" method="POST">
+        <form onSubmit={contactMessage} method="POST">
           <fieldset>
             <legend>
               <h1>
@@ -19,20 +33,39 @@ const Contact = () => {
             <table>
               <tr>
                 <td colSpan="2">
-                  <input type="email" placeholder="Email Address" />
+                  <input
+                    required
+                    type="email"
+                    placeholder="Email Address"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input type="text" placeholder="Full Name" />
+                  <input
+                    required
+                    type="text"
+                    placeholder="Full Name"
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </td>
                 <td>
-                  <input type="number" placeholder="Phone Number" />
+                  <input
+                    required
+                    maxLength="11"
+                    type="number"
+                    placeholder="Phone Number"
+                  />
                 </td>
               </tr>
               <tr>
                 <td colSpan="2">
-                  <textarea placeholder="Message"></textarea>
+                  <textarea
+                    required
+                    placeholder="Message"
+                    onChange={(e) => setFeedback(e.target.value)}
+                  ></textarea>
                 </td>
               </tr>
               <tr>

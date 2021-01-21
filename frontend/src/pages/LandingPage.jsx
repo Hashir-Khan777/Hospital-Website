@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/landingpage.css";
 import Top from "../components/Top";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Messages } from "../store/action/GetDoctors";
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [feedback, setFeedback] = useState();
+
+  const dispatch = useDispatch();
+
+  const landingMessage = (e) => {
+    e.preventDefault();
+    dispatch(Messages(name, email, feedback));
+    props.history.push("/");
+  };
+
   return (
     <div className="landing_page">
       <div className="page_landing">
@@ -47,7 +61,7 @@ const LandingPage = () => {
           </div>
         </header>
         <div className="page_for_form">
-          <form action="" method="POST">
+          <form method="POST" onSubmit={landingMessage}>
             <fieldset>
               <legend>
                 <h1>LANDING PAGE FORM</h1>
@@ -63,11 +77,13 @@ const LandingPage = () => {
                 <tr>
                   <td>
                     <input
+                      required
                       className="landing_input"
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Enter name"
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </td>
                 </tr>
@@ -81,11 +97,13 @@ const LandingPage = () => {
                 <tr>
                   <td>
                     <input
+                      required
                       className="landing_input"
                       type="email"
                       name="email"
                       id="mail"
                       placeholder="Eter email"
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </td>
                 </tr>
@@ -99,9 +117,11 @@ const LandingPage = () => {
                 <tr>
                   <td>
                     <textarea
+                      required
                       name="feedback"
                       id="feedback"
                       placeholder="Your feedback..."
+                      onChange={(e) => setFeedback(e.target.value)}
                     ></textarea>
                   </td>
                 </tr>

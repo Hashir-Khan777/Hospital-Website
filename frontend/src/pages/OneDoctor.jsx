@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Doctor_Details } from "../store/action/GetDoctors";
 import Loadingbox from "../components/Loadingbox";
 import Messagebox from "../components/Messagebox";
+import { Link } from "react-router-dom";
 
 const OneDoctor = (props) => {
   const dispatch = useDispatch();
@@ -113,6 +114,12 @@ const OneDoctor = (props) => {
                 <div className="fees">
                   <h2>fees:</h2>
                   <p>Rs. {doctor.fees}</p>
+                </div>
+
+                <div className="book_appointment">
+                  <Link to="/appointment" className="book_appointment_button">
+                    Book Appointment
+                  </Link>
                 </div>
               </div>
             </div>

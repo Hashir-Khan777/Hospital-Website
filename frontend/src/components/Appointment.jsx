@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Footer from "../components/Footer";
 import "../css/appointment.css";
 import Top from "./Top";
@@ -17,18 +17,20 @@ const Appointment = (props) => {
   const [appointmentDate, setappointmentDate] = useState();
   const [depart, setDepart] = useState();
 
-  const appointmentBooked = () => {
+  const appointmentBooked = (e) => {
+    e.preventDefault();
     dispatch(
       AppointmentBooked(name, email, dob, num, sex, appointmentDate, depart)
     );
     props.history.push("/");
   };
+
   return (
     <div className="appointment">
       <Header />
       <div className="appointment_booking">
         <div className="appointment_form">
-          <form method="POST" action="/" onSubmit={appointmentBooked}>
+          <form method="POST" onSubmit={appointmentBooked}>
             <fieldset>
               <legend>
                 <h1>Book an Appointment</h1>
@@ -40,6 +42,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <input
+                      required
                       type="text"
                       name=""
                       id="name"
@@ -55,6 +58,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <input
+                      required
                       type="email"
                       id="email"
                       placeholder="Enter email..."
@@ -69,6 +73,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <input
+                      required
                       type="date"
                       id="date"
                       placeholder="Enter date of birth..."
@@ -83,6 +88,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <input
+                      required
                       type="number"
                       id="number"
                       placeholder="Enter mobile number..."
@@ -96,7 +102,11 @@ const Appointment = (props) => {
                     <label htmlFor="sex">Sex:</label>
                   </td>
                   <td>
-                    <select id="sex" onChange={(e) => setSex(e.target.value)}>
+                    <select
+                      required
+                      id="sex"
+                      onChange={(e) => setSex(e.target.value)}
+                    >
                       <option value="0">Sex</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
@@ -111,6 +121,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <input
+                      required
                       type="date"
                       name=""
                       id="appointmentDate"
@@ -125,6 +136,7 @@ const Appointment = (props) => {
                   </td>
                   <td>
                     <select
+                      required
                       id="depart"
                       onChange={(e) => setDepart(e.target.value)}
                     >

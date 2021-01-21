@@ -80,4 +80,21 @@ const AppointmentBooked = (
   }
 };
 
-export { Get_Doctors, Doctor_Details, Admin, AppointmentBooked };
+const Messages = (name, email, feedback) => async (dispatch) => {
+  dispatch({
+    type: "MESSAGE_SEND_REQUEST",
+    payload: { name, email, feedback },
+  });
+  try {
+    const { message } = await Axios.post("/api/messages", {
+      name,
+      email,
+      feedback,
+    });
+    dispatch({ type: "MESSAGE_SEND_SUCCESS", payload: message });
+  } catch (err) {
+    dispatch({ type: "MESSAGE_SEND_FAIL", payload: err.message });
+  }
+};
+
+export { Get_Doctors, Doctor_Details, Admin, AppointmentBooked, Messages };

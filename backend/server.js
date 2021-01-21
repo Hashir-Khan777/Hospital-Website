@@ -8,6 +8,7 @@ const AdminModel = require("./adminModel.js");
 const BookedAppointment = require("./appointmentModel.js");
 const bodyParser = require("body-parser");
 const Nexmo = require("nexmo");
+const MessageModel = require("./messageModel.js");
 
 const nexmo = new Nexmo({
   apiKey: process.env.APIKEY,
@@ -100,9 +101,28 @@ app.post(
   })
 );
 
+app.post(
+  "/api/messages",
+  expressAsyncHandler(async (req, res) => {
+    const message = new MessageModel({
+      name: req.body.email,
+      email: req.body.email,
+      feedback: req.body.feedback,
+    });
+    const newMessage = await message.save();
+
+    res.send(newMessage);
+  })
+);
+
 app.get("/api/appointment", async (req, res) => {
   const booked = await BookedAppointment.find({});
   res.send(booked);
+});
+
+app.get("/api/messages", async (req, res) => {
+  const messages = await MessageModel.find({});
+  res.send(messages);
 });
 
 const PORT = process.env.PORT;

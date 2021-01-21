@@ -3,6 +3,7 @@ const INITIAL_STATE = {
   doctor: [],
   adminInfo: [],
   appointment: [],
+  messages: [],
 };
 
 const GetDoctorsReducer = (state = INITIAL_STATE, action) => {
@@ -102,9 +103,34 @@ const AppointmentReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
+const MessageReducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case "MESSAGE_SEND_REQUEST":
+      return {
+        loading: true,
+      };
+
+    case "MESSAGE_SEND_SUCCESS":
+      return {
+        loading: false,
+        messages: action.payload,
+      };
+
+    case "MESSAGE_SEND_FAIL":
+      return {
+        loading: false,
+        error: action.payload,
+      };
+
+    default:
+      return state;
+  }
+};
+
 export {
   GetDoctorsReducer,
   DoctorDetailsReducer,
   AdminSigninReducer,
   AppointmentReducer,
+  MessageReducer,
 };
