@@ -5,6 +5,7 @@ import Appointment from "../components/Appointment";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import Dashboard from "../pages/Dashboard";
+import DentalEmergency from "../pages/DentalEmergency";
 import Dentist from "../pages/Dentist";
 import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
@@ -34,6 +35,11 @@ const Approuter = () => {
       />
       <Route exact={true} path="/appointment" component={Appointment} />
       <Route exact={true} path="/services" component={Services} />
+      <Route
+        exact={true}
+        path="/dental-emergency"
+        component={DentalEmergency}
+      />
     </Router>
   );
 };

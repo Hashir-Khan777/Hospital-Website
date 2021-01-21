@@ -17,7 +17,7 @@ const Services = () => {
             <h1>General Dentistry</h1>
             <div className="general_dentistry_content">
               <div className="dental_emergency general_service">
-                <Link className="go_to_service">
+                <Link to="/dental-emergency" className="go_to_service">
                   <div className="service_image">
                     <figure>
                       <img src="/images/dentalEmergency.png" alt="" />
