@@ -1,50 +1,152 @@
 .services_content {
   position: relative;
-  top: 200px;
+  top: 150px;
 }
 
-.services_content > h1 {
-  text-align: center;
-  color: #58a8ff;
-  font-size: 45px;
-  margin: 20px 0;
+.servive_image {
+  position: relative;
+  background-image: url(../doctorBlue.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
 }
 
-.general_dentistry > h1 {
-  color: #58a8ff;
+.service_head {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.service_head > h1 {
+  padding: 19px 30px 0 0;
+  display: inline-block;
+  position: relative;
+  background-color: #e5e5e5;
+  color: #323232;
+  z-index: 2;
+}
+
+.service_head > h1::after {
+  background: linear-gradient(
+    to top right,
+    #e5e5e5 0%,
+    #e5e5e5 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  width: 72px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -72px;
+}
+
+.open_menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.open_menu h3 {
+  margin: 0 0 0 10px;
+}
+
+.general_dentistry_item {
+  background-color: #fff;
   margin: 20px;
+  padding: 20px;
+  color: #323232;
+  font-weight: 800 !important;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  box-shadow: 17px 17px 0 0 #ebebeb;
+  transition: all 0.9s linear;
 }
 
-.general_dentistry_content {
+.general_dentistry_item i {
+  font-size: 25px !important;
+  transition: all 0.5s linear;
+}
+
+.general_dentistry_item:hover {
+  background-color: #f7f7f7;
+  transition: all 0.3s linear;
+}
+
+.general_dentistry_list h2 {
+  margin: 20px 0 10px 10px;
+  color: #58a8ff;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: all 0.5s linear;
+}
+
+.hidden_service {
+  display: none;
+  transition: all 0.9s linear;
+}
+
+.dental_emergency_content {
+  text-align: justify;
+  transition: all 0.9s linear;
+}
+
+.dental_emergency_content h1,
+.dental_emergency_content h2 {
+  color: #58a8ff;
+  padding: 0 30px;
+}
+
+.dental_emergency_content p {
+  padding: 0 30px;
+}
+
+.dental_image_para {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.general_service {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  margin: 10px;
-}
-
-.service_image figure {
-  position: relative;
-  width: 100%;
-  height: 40vh;
-}
-
-.service_image figure img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.service_name {
-  text-align: center;
-  color: #58a8ff;
   margin: 20px 0;
-  font-size: 20px;
+}
+
+.dental_para {
+  width: 50%;
+}
+
+.dental_para > h1 {
+  margin: 20px 0;
+}
+
+.dental_para p {
+  line-height: 2rem;
+}
+
+.dental_emergency_heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.dental_emergency_content > h2 {
+  margin: 20px 0;
+}
+
+.common_dental_emergency {
+  margin: 20px 0;
+}
+
+.dental_emergency_side_bar {
+  position: relative;
+  width: 20%;
+  height: 100vh;
+  float: right;
+  clear: both;
 }

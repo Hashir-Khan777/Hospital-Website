@@ -34,15 +34,17 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="checkout_button">
-            <button className="check_services">
-              <i className="far fa-newspaper newspaper_icon"></i>
-              CHECKOUT OUR FACILITIES
-            </button>
+            <Link to="/services">
+              <button className="check_services">
+                <i className="far fa-newspaper newspaper_icon"></i>
+                CHECKOUT OUR SERVICES
+              </button>
+            </Link>
           </div>
         </div>
 
         <div className="about_image_section">
-          <Link to="/">
+          <Link to="/privacypolicy">
             <div className="image_content">
               <figure>
                 <img src="/images/outside.jpg" alt="" />
@@ -50,7 +52,9 @@ const AboutContent = () => {
               <div className="giude">
                 <h3>PATIENT & VISITOR GUIDE</h3>
                 <p>Plan your visit to our Clinic</p>
-                <p className="more_guide">MORE</p>
+                <Link className="more_guide" to="/privacypolicy">
+                  MORE
+                </Link>
               </div>
             </div>
           </Link>

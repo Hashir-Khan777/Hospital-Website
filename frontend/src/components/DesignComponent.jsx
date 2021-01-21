@@ -38,7 +38,7 @@ const DesignComponent = () => {
           </div>
         </div>
 
-        <Link className="more" to="/">
+        <Link className="more" to="/services">
           MORE
         </Link>
       </div>

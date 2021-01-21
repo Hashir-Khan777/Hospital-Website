@@ -1,11 +1,16 @@
 .contact_form_content {
   position: relative;
   height: 130vh;
-  top: 10vh;
+  top: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+iframe {
+  position: relative;
+  top: 156px;
 }
 
 .contact_form_content legend {

@@ -81,10 +81,12 @@ const Featured = () => {
               solutions and recommendations to all your dental problems.
             </p>
 
-            <button className="check_services">
-              <i className="fas fa-microscope newspaper_icon"></i>
-              CHECKOUT ALL SERVICES
-            </button>
+            <Link to='/servives'>
+              <button className="check_services">
+                <i className="fas fa-microscope newspaper_icon"></i>
+                CHECKOUT ALL SERVICES
+              </button>
+            </Link>
           </div>
         </div>
 

@@ -14,7 +14,7 @@ const MedicalDepartments = () => {
         <div className="medical_department_cards">
           <div className="medical_card">
             <div className="medical_card_image">
-              <Link to="/">
+              <Link to="/dentist">
                 <figure>
                   <img src="/images/aimenzia.jpg" alt="" />
                 </figure>
@@ -25,7 +25,7 @@ const MedicalDepartments = () => {
               <p>Dr. Aimen Zia</p>
             </div>
             <div className="more_about_departments">
-              <Link className="see_more_link" to="/">
+              <Link className="see_more_link" to="/dentist">
                 MORE
               </Link>
             </div>
@@ -33,7 +33,7 @@ const MedicalDepartments = () => {
 
           <div className="medical_card">
             <div className="medical_card_image">
-              <Link to="/">
+              <Link to="/dentist">
                 <figure>
                   <img src="/images/zaid.jpg" alt="" />
                 </figure>
@@ -44,7 +44,7 @@ const MedicalDepartments = () => {
               <p>Dr. Zaid Iqbal</p>
             </div>
             <div className="more_about_departments">
-              <Link className="see_more_link" to="/">
+              <Link className="see_more_link" to="/dentist">
                 MORE
               </Link>
             </div>
@@ -52,7 +52,7 @@ const MedicalDepartments = () => {
 
           <div className="medical_card">
             <div className="medical_card_image">
-              <Link to="/">
+              <Link to="/dentist">
                 <figure>
                   <img src="/images/farhan.jpg" alt="" />
                 </figure>
@@ -63,7 +63,7 @@ const MedicalDepartments = () => {
               <p>Dr. Farhan Farooq</p>
             </div>
             <div className="more_about_departments">
-              <Link className="see_more_link" to="/">
+              <Link className="see_more_link" to="/dentist">
                 MORE
               </Link>
             </div>
@@ -85,12 +85,14 @@ const MedicalDepartments = () => {
             different expectations and our job is to meet their expectations.
           </p>
 
-          <button className="departments_button">
-            <div className="department_icon">
-              <i className="fas fa-download download_icon"></i>
-            </div>
-            CHECKOUT ALL DOCTORS
-          </button>
+          <Link to="/dentist">
+            <button className="departments_button">
+              <div className="department_icon">
+                <i className="fas fa-download download_icon"></i>
+              </div>
+              CHECKOUT ALL DOCTORS
+            </button>
+          </Link>
         </div>
       </div>
     </div>

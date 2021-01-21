@@ -6,6 +6,7 @@ import "./css/basic.css";
 import "./FontAwesome/css/all.css";
 import { Provider } from "react-redux";
 import Store from "./store/Store";
+import "./css/mediaquery.css";
 
 ReactDOM.render(
   <Provider store={Store}>

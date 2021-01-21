@@ -1,0 +1,38 @@
+@media screen and (max-width: 1080px) {
+  .skew_one,
+  .skew_two,
+  .skew_three,
+  .skew_four {
+    transform: skew(0deg);
+    margin: 0;
+  }
+  .about_content_section {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .featured_first_section {
+    width: 100%;
+  }
+  .featured_second_section {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  .modern_equipments {
+    width: 80%;
+    margin: 20px 0 150px 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .modern_equipments {
+    width: 80%;
+    margin: 20px 0 250px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about_image_section figure {
+    margin: 0;
+    width: 300px;
+  }
+}
