@@ -7,13 +7,7 @@ const DentistModel = require("./dentistModel.js");
 const AdminModel = require("./adminModel.js");
 const BookedAppointment = require("./appointmentModel.js");
 const bodyParser = require("body-parser");
-const Nexmo = require("nexmo");
 const MessageModel = require("./messageModel.js");
-
-const nexmo = new Nexmo({
-  apiKey: process.env.APIKEY,
-  apiSecret: process.env.APISECRET,
-});
 
 dotenv.config();
 const app = express();
@@ -88,15 +82,6 @@ app.post(
       appointmentDate: req.body.appointmentdate,
       depart: req.body.depart,
     });
-    const newAppointment = await appointment.save();
-    // const from = "Zia Dental";
-    // const to = process.env.NUMBER;
-    // const text = `${newAppointment.name} booked an appointment for ${
-    //   newAppointment.depart
-    // }, ${newAppointment.sex == "female" ? "her" : "his"} number is ${
-    //   newAppointment.mob
-    // }`;
-    // nexmo.message.sendSms(from, to, text);
     res.send(newAppointment);
   })
 );

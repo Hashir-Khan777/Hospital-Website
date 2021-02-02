@@ -24,6 +24,11 @@ const Approuter = () => {
       <Route exact={true} path="/dentist" component={Dentist} />
       <Route
         exact={true}
+        path="/dental-emergency"
+        component={DentalEmergency}
+      />
+      <Route
+        exact={true}
         path="/dentist/:id/:doctorname"
         component={OneDoctor}
       />
@@ -35,11 +40,6 @@ const Approuter = () => {
       />
       <Route exact={true} path="/appointment" component={Appointment} />
       <Route exact={true} path="/services" component={Services} />
-      <Route
-        exact={true}
-        path="/dental-emergency"
-        component={DentalEmergency}
-      />
     </Router>
   );
 };

@@ -1,4 +1,6 @@
 .design_component {
+  position: relative;
+  top: -130px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,22 +18,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 270px;
-  height: 235px;
+  width: 266px;
+  height: 285px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .skew_one,
 .skew_three {
-  transform: skewY(-10deg);
-  background-color: #007cba;
+  transform: skewY(-5deg);
+  background-color: rgb(69, 170, 255);
 }
 
 .skew_two,
 .skew_four {
-  transform: skewY(10deg);
-  background-color: #006ba1;
+  transform: skewY(5deg);
+  background-color: rgb(89, 190, 255);
 }
 
 .more {

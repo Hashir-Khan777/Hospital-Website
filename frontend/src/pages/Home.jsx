@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MedicalDepartments from "../components/MedicalDepartments";
 import Slider from "../components/Slider";
+import Images from "../components/SliderImage";
 import Top from "../components/Top";
 
 const Home = () => {

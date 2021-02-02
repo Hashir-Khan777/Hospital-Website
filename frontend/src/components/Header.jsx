@@ -11,6 +11,10 @@ const Header = () => {
     }
   });
 
+  const navHandler = () => {
+    document.querySelector(".nav_list").classList.toggle("open_menu");
+  };
+
   return (
     <div className="header">
       <header>
@@ -68,7 +72,25 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+            <div className="hamburger_menu">
+              <i className="fas fa-bars" onClick={navHandler}></i>
+            </div>
           </div>
+        </div>
+
+        <div className="lower_number_appointment_section">
+          <div className="lower_section_number">
+            <i className="fas fa-ambulance"></i>
+            <p className="emmergecncy_call">Emergency Line: +923002278864</p>
+          </div>
+
+          <ul className="lower_section_appointment_list">
+            <li className="appointment_items">
+              <Link to="/appointment" className="appointment_links">
+                request an appointment
+              </Link>
+            </li>
+          </ul>
         </div>
       </header>
     </div>

@@ -111,3 +111,44 @@ header .appointment_links {
   height: 100%;
   object-fit: cover;
 }
+
+.lower_section_number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.lower_section_appointment_list {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.lower_section_number > p {
+  font-size: 12px;
+}
+
+.lower_section_number > i {
+  font-size: 12px !important;
+}
+
+.lower_number_appointment_section {
+  display: none;
+}
+.hamburger_menu {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 20px !important;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.fa-bars:hover {
+  color: #58a8ff;
+  transition: all 0.4s linear;
+}

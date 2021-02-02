@@ -1,9 +1,37 @@
-.header_slider {
+.slide {
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-.header_slider figure img {
+.slide figure img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+}
+
+.slide_content {
+  position: absolute;
+}
+
+.slideOne_content {
+  top: 50%;
+  bottom: 50%;
+  right: 10%;
+}
+
+.slider_button {
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  top: 50%;
+  font-size: 50px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_slide,
+.right_slide {
+  margin: 0 20px;
+  cursor: pointer;
 }

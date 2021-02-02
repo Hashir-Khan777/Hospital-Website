@@ -26,3 +26,4 @@ frontend/src/FontAwesome
 backend/.env
 frontend/.eslintcache
 .vscode/settings.json
+backend

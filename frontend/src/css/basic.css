@@ -18,3 +18,7 @@ body {
   height: 100vh;
   background-color: #efefef;
 }
+
+p {
+  line-height: 1.8em;
+}

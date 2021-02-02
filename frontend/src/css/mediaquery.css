@@ -3,8 +3,10 @@
   .skew_two,
   .skew_three,
   .skew_four {
-    transform: skew(0deg);
+    width: 200px;
+    height: 250px;
     margin: 0;
+    width: 210px;
   }
   .about_content_section {
     width: 100%;
@@ -21,6 +23,29 @@
     width: 80%;
     margin: 20px 0 150px 0;
   }
+  .logo_content_section {
+    width: 100%;
+  }
+  .contact_form_section {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .contact_details_section {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .skew_box {
+    width: 50%;
+  }
+  .skew_one,
+  .skew_two,
+  .skew_three,
+  .skew_four {
+    transform: skew(0);
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -28,11 +53,48 @@
     width: 80%;
     margin: 20px 0 250px 0;
   }
+  .upper_section {
+    display: none !important;
+  }
+  .lower_number_appointment_section {
+    display: block;
+  }
+  header {
+    padding: 10px 10px;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  .nav_list {
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 200px;
+    background-color: #efefef;
+    width: 40%;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+  }
+  .open_menu {
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav_list li {
+    margin: 50px 20px;
+    border-bottom: 1px solid #58a8ff;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .about_image_section figure {
     margin: 0;
-    width: 300px;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about_image_section figure {
+    margin: 0;
+    width: 250px;
   }
 }

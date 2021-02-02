@@ -22,7 +22,7 @@
 }
 
 .service_head > h1 {
-  padding: 19px 30px 0 0;
+  padding: 19px 30px;
   display: inline-block;
   position: relative;
   background-color: #e5e5e5;
@@ -46,107 +46,75 @@
   right: -72px;
 }
 
-.open_menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.dental_services {
+  margin: 30px 0;
 }
 
-.open_menu h3 {
-  margin: 0 0 0 10px;
+.general_service {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
 }
 
-.general_dentistry_item {
-  background-color: #fff;
-  margin: 20px;
-  padding: 20px;
-  color: #323232;
-  font-weight: 800 !important;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s linear;
-  box-shadow: 17px 17px 0 0 #ebebeb;
-  transition: all 0.9s linear;
+.service_image figure {
+  position: relative;
+  width: 100%;
+  height: 40vh;
 }
 
-.general_dentistry_item i {
-  font-size: 25px !important;
-  transition: all 0.5s linear;
+.service_image figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.general_dentistry_item:hover {
-  background-color: #f7f7f7;
-  transition: all 0.3s linear;
-}
-
-.general_dentistry_list h2 {
-  margin: 20px 0 10px 10px;
-  color: #58a8ff;
-}
-
-.rotate {
-  transform: rotate(180deg);
-  transition: all 0.5s linear;
-}
-
-.hidden_service {
-  display: none;
-  transition: all 0.9s linear;
-}
-
-.dental_emergency_content {
-  text-align: justify;
-  transition: all 0.9s linear;
-}
-
-.dental_emergency_content h1,
-.dental_emergency_content h2 {
-  color: #58a8ff;
-  padding: 0 30px;
-}
-
-.dental_emergency_content p {
-  padding: 0 30px;
-}
-
-.dental_image_para {
+.general_dentistry_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px 0;
 }
 
-.dental_para {
-  width: 50%;
+.general_dentistry > h1 {
+  color: #58a8ff;
+  margin: 20px 10px;
 }
 
-.dental_para > h1 {
-  margin: 20px 0;
-}
-
-.dental_para p {
-  line-height: 2rem;
-}
-
-.dental_emergency_heading {
+.service_name {
   text-align: center;
+  color: #58a8ff;
   margin: 20px 0;
-  font-size: 40px;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 
-.dental_emergency_content > h2 {
-  margin: 20px 0;
-}
-
-.common_dental_emergency {
-  margin: 20px 0;
-}
-
-.dental_emergency_side_bar {
+.img-comp-container {
   position: relative;
-  width: 20%;
-  height: 100vh;
-  float: right;
-  clear: both;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /* set the appearance of the slider: */
+  width: 40px;
+  height: 40px;
+  background-color: #2196f3;
+  opacity: 0.7;
+  border-radius: 50%;
 }

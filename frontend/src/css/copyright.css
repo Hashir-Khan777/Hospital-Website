@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 13px;
 }
 
 .fiverr_link {
