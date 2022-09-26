@@ -14,9 +14,9 @@ const Dentist = () => {
   const doctorsList = useSelector((state) => state.doctorsList);
   const { loading, error, doctors } = doctorsList;
 
-  useEffect(() => {
-    dispatch(Get_Doctors());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(Get_Doctors());
+  // }, [dispatch]);
 
   return (
     <div className="dentist">

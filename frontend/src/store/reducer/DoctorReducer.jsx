@@ -1,6 +1,30 @@
 const INITIAL_STATE = {
-  doctors: [],
-  doctor: [],
+  doctors: [
+    {
+      _id: "1",
+      name: "Doctor 1",
+      image: "/images/zaid.jpg",
+    },
+    {
+      _id: "2",
+      name: "Doctor 2",
+      image: "/images/farhan.jpg",
+    },
+  ],
+  doctor: {
+    _id: "1",
+    name: "Doctor 1",
+    image: "/images/zaid.jpg",
+    experience: 5,
+    services: "service 1, service 2",
+    condition: "condition 1, condition 2",
+    education: "education 1, education 2",
+    about: "about the doctor",
+    wait: 2,
+    mondaysaturday: "11am",
+    sunday: "off",
+    fees: 300,
+  },
   adminInfo: [],
   appointment: [],
   messages: [],

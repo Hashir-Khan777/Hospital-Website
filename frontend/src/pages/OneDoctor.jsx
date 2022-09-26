@@ -15,9 +15,9 @@ const OneDoctor = (props) => {
   const doctorDetails = useSelector((state) => state.doctorDetails);
   const { loading, error, doctor } = doctorDetails;
 
-  useEffect(() => {
-    dispatch(Doctor_Details(doctortId));
-  }, [dispatch, doctortId]);
+  // useEffect(() => {
+  //   dispatch(Doctor_Details(doctortId));
+  // }, [dispatch, doctortId]);
 
   return (
     <div className="one_dentist">

@@ -10,9 +10,7 @@ const Slider = () => {
             <figure>
               <img src="/images/slideOne.jpg" alt="" />
             </figure>
-            <div className="slide_content slideOne_content">
-              <p>Slide One</p>
-            </div>
+            <div className="slide_content slideOne_content"></div>
           </div>
           {/* <div className="slide_one slide">
             <figure>
@@ -32,10 +30,10 @@ const Slider = () => {
           </div> */}
         </div>
 
-        <div className="slider_button">
+        {/* <div className="slider_button">
           <i className="fas fa-chevron-left left_slide"></i>
           <i className="fas fa-chevron-right right_slide"></i>
-        </div>
+        </div> */}
       </div>
     </div>
   );

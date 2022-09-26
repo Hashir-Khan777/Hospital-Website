@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Hospital from "./Hospital";
 import reportWebVitals from "./reportWebVitals";
 import "./css/basic.css";
-import "./FontAwesome/css/all.css";
+// import "./FontAwesome/css/all.css";
 import { Provider } from "react-redux";
 import Store from "./store/Store";
 import "./css/mediaquery.css";
