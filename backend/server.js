@@ -82,7 +82,7 @@ app.post(
       appointmentDate: req.body.appointmentdate,
       depart: req.body.depart,
     });
-    res.send(newAppointment);
+    res.send(appointment);
   })
 );
 
